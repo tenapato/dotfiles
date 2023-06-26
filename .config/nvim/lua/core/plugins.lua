@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
   use 'preservim/vimux'
   use 'christoomey/vim-tmux-navigator'
   use 'tpope/vim-fugitive'
+  use 'cameron-wags/rainbow_csv.nvim'
  -- completion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -46,7 +47,7 @@ return require('packer').startup(function(use)
   use {
 	  'nvim-telescope/telescope.nvim',
 	  tag = '0.1.0',
-	  equires = { {'nvim-lua/plenary.nvim'} }
+	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
   use "BurntSushi/ripgrep"

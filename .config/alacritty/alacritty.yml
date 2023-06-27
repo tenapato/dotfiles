@@ -33,9 +33,9 @@ shell:
   program: /bin/zsh
   args:
     - --login
-    - -l
-    - -c  
-    - "tmux attach || tmux"
+
+
+
 
 key_bindings:
   - { key: Return, mods: Super|Shift, action: SpawnNewInstance }

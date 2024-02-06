@@ -1,0 +1,41 @@
+window:
+  padding:
+    x: 10
+    y: 10
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.95
+  dimensions:
+    columns: 133
+    lines: 40
+
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: GeistMono Nerd Font 
+    style:  Medium 
+  size: 12
+draw_bold_text_with_bright_colors: true
+
+import:
+  - ~/.config/alacritty/ayu-dark.yml
+
+
+selection:
+  save_to_clipboard: false
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+
+
+
+
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }

@@ -52,6 +52,14 @@ return require('packer').startup(function(use)
 
   use "BurntSushi/ripgrep"
 
+  use "folke/noice.nvim"
+
+  use "MunifTanjim/nui.nvim"
+
+  use "rcarriga/nvim-notify"
+
+  use "numToStr/Comment.nvim"
+
   --autocompletion
 --  use("hrsh7th/nvim-cmp")
   use("hrsh7th/cmp-buffer")
@@ -59,7 +67,7 @@ return require('packer').startup(function(use)
   use {
 	"windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
-} 
+}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

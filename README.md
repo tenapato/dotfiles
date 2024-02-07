@@ -1,3 +1,18 @@
+## How to run
+
+### Tmux    
+```bash
+tmux source ~/.tmux.conf
+```
+
+### Nvim
+
+```bash
+:so
+:PackerSync
+```
+
+
 ## File Structure
 
 ```

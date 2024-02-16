@@ -12,3 +12,5 @@ require("core.plugin_config.mason")
 require("core.plugin_config.rainbow")
 require("core.plugin_config.noice")
 require("core.plugin_config.comment")
+require("core.plugin_config.harpoon")
+

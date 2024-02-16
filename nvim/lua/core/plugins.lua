@@ -60,6 +60,8 @@ return require('packer').startup(function(use)
 
   use "numToStr/Comment.nvim"
 
+  use "ThePrimeagen/harpoon"
+
   --autocompletion
 --  use("hrsh7th/nvim-cmp")
   use("hrsh7th/cmp-buffer")

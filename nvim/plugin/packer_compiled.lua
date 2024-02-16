@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/patriciotena/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/patriciotena/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/Users/patriciotena/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",

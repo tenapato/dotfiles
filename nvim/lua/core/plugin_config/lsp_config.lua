@@ -6,7 +6,7 @@ require("mason-lspconfig").setup({
   -- taplo - TOML
   -- jsonls - JSON
   -- clangd - C++
-  ensure_installed = { "lua_ls", "tsserver" , "pyright" , "taplo", "jsonls", "clangd"}
+  ensure_installed = { "lua_ls", "tsserver" , "pyright" , "taplo", "jsonls", "clangd", "gopls"}
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
@@ -66,3 +66,5 @@ require("lspconfig").tsserver.setup{
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
   cmd = {"typescript-language-server", "--stdio"},
 }
+
+require("lspconfig").gopls.setup{}

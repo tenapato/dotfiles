@@ -1,12 +1,15 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua", "rust", "ruby", "vim", "cpp", "json", "python", "yaml", "javascript", "typescript"},
+  ensure_installed = { "c", "lua", "rust", "ruby", "vim", "cpp", "json", "python", "yaml", "javascript", "typescript", "markdown", "bash"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
   auto_install = true,
   highlight = {
     enable = true,
+  },
+  rainbow = {
+      enable = false,
   },
 }
 
@@ -22,4 +25,7 @@ require'treesitter-context'.setup{
   -- When separator is set, the context will only show up when there are at least 2 lines above cursorline.
   separator = nil,
   zindex = 20, -- The Z-index of the context window
+}
+
+require('rainbow-delimiters.setup').setup {
 }

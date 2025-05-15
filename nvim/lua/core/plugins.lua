@@ -16,11 +16,19 @@ return require('packer').startup(function(use)
   use 'ellisonleao/gruvbox.nvim'
   use 'dracula/vim'
   use 'ayu-theme/ayu-vim'
+  use "rebelot/kanagawa.nvim"
+  use 'AlexvZyl/nordic.nvim'
+  use { "scottmckendry/cyberdream.nvim" }
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
+  --use 'nvim-treesitter/nvim-treesitter'
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+  }
   use 'nvim-treesitter/nvim-treesitter-context'
+  use 'HiPhish/rainbow-delimiters.nvim'
   use 'bluz71/vim-nightfly-colors'
   use 'vim-test/vim-test'
   use 'lewis6991/gitsigns.nvim'
